@@ -1,6 +1,6 @@
 # DevCamp Portfolio Application
 
-> this is Uby on Rails 5 application tha allows users to create their own portfolio's
+> this is Ruby on Rails 5 application tha allows users to create their own portfolio's
 
 ### Features
 

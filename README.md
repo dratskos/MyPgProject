@@ -1,25 +1,25 @@
-# README
-# NewRead me file commit
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DevCamp Portfolio Application
 
-Things you may want to cover:
+> this is Uby on Rails 5 application tha allows users to create their own portfolio's
 
-* Ruby version
+### Features
 
-* System dependencies
+-Real time chat engine for comments
+-Blogg
+-Portfolio
+-Drag and drop interface
 
-* Configuration
+### Code Example
 
-* Database creation
+``` ruby
+def my_great_method
+	puts "here it is"
+	
+end
+```
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# MyPgProject
+``` javascript
+alert(Hi there);
+end
+```

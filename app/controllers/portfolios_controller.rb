@@ -17,7 +17,7 @@ class PortfoliosController < ApplicationController
 
     	respond_to do |format|
       	if @portfolio_item.save
-       	 format.html { redirect_to portfolios_path, notice: 'Your post is now live.' }
+       	 format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
         else
         format.html { render :new }
         end
@@ -35,10 +35,10 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
         format.html { redirect_to @portfolio_item, notice: 'The record  has successfully updated.' }
-        format.json { render :show, status: :ok, location: @portfolio_item }
+       
       else
         format.html { render :edit }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+        
       end
     end
   end

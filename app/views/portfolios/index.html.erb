@@ -6,7 +6,12 @@
 
   <p><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
   <p><%= portfolio_item.subtitle %></p>
+<<<<<<< HEAD
   
+=======
+  <p><%= portfolio_item.body %></p>
+
+>>>>>>> 17011b5b02256be5a0d323f3daae0f210f4cd472
   <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
 
 <%= link_to "Edit" , edit_portfolio_path(portfolio_item) %>

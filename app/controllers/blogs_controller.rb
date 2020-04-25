@@ -29,10 +29,10 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+        
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+        
       end
     end
   end
@@ -43,10 +43,9 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
-        format.json { render :show, status: :ok, location: @blog }
+        
       else
         format.html { render :edit }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,11 +55,16 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
+<<<<<<< HEAD
       format.html { redirect_to blogs_url, notice: 'Post was successfully destroyed.' }
+=======
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
+>>>>>>> 17011b5b02256be5a0d323f3daae0f210f4cd472
       format.json { head :no_content }
     end
   end
 
+<<<<<<< HEAD
 def toggle_status
   if @blog.draft?
       @blog.published!
@@ -70,6 +74,17 @@ def toggle_status
   redirect_to blogs_url, notice: 'Post status has been updated'
 
 end
+=======
+  def toggle_status
+    if @blog.draft?
+      @blog.published!
+    elsif @blog.published?
+      @blog.draft!
+    end
+        
+    redirect_to blogs_url, notice: 'Post status has been updated.'
+  end
+>>>>>>> 17011b5b02256be5a0d323f3daae0f210f4cd472
 
   private
     # Use callbacks to share common setup or constraints between actions.

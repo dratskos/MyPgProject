@@ -55,26 +55,12 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-<<<<<<< HEAD
-      format.html { redirect_to blogs_url, notice: 'Post was successfully destroyed.' }
-=======
       format.html { redirect_to blogs_url, notice: 'Post was removed.' }
->>>>>>> 17011b5b02256be5a0d323f3daae0f210f4cd472
       format.json { head :no_content }
     end
   end
 
-<<<<<<< HEAD
-def toggle_status
-  if @blog.draft?
-      @blog.published!
-  elsif @blog.published?
-      @blog.draft!
-  end
-  redirect_to blogs_url, notice: 'Post status has been updated'
 
-end
-=======
   def toggle_status
     if @blog.draft?
       @blog.published!
@@ -84,7 +70,7 @@ end
         
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
->>>>>>> 17011b5b02256be5a0d323f3daae0f210f4cd472
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

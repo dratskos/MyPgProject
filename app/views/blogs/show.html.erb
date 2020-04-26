@@ -1,8 +1,13 @@
-<p id="notice"><%= notice %></p>
+ <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Title:</strong>
   <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @blog.body %>
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |

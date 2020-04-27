@@ -6,7 +6,7 @@
     <meta name="keywords" content="<%= @seo_keywords %>" />
      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -17,8 +17,10 @@
 
 
     <%= render "shared/nav", location: 'top' %>
-    <%= login_helper %> 
+    <%= login_helper %>
     <%= yield %>
+
     <%= source_helper("application") %>
- </body>
+
+  </body>
 </html>

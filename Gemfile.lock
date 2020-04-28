@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/dratskos/devcamp_view_tool
+  revision: b88cfb51f535d9806271f348236df0d7107fc907
+  specs:
+    devcamp_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -246,6 +252,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.4.1)
   byebug
+  devcamp_view_tool!
   devise (~> 4.7, >= 4.7.1)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.7)

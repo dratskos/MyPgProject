@@ -52,3 +52,5 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'bootstrap', '~> 4.4.1'
 
 gem 'devcamp_view_tool', git: 'https://github.com/dratskos/devcamp_view_tool'
+
+gem 'petergate', '~> 2.0', '>= 2.0.1'

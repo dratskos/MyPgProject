@@ -1,6 +1,6 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-
+@import "font-awesome";
 /*
  * Globals
  */
@@ -153,9 +153,7 @@ h6, .h6 {
 }
 
 
-/*
- * Footer
- */
+
 
 .blog-footer {
   padding: 2.5rem 0;
@@ -166,4 +164,9 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.social_links li {
+  fontsize: 3em;
+
 }
